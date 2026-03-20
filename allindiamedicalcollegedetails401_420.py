@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/seven-hills-college-of-pharmacy-tirupati-61069",
-  "https://www.shiksha.com/college/contai-polytechnic-college-97797",
-  "https://www.shiksha.com/college/kle-institute-of-physiotherapy-karnataka-other-185687",
-  "https://www.shiksha.com/college/veterinary-college-and-research-institute-theni-tamil-nadu-veterinary-and-animal-sciences-university-211667",
-  "https://www.shiksha.com/college/itm-college-of-pharmacy-maharajganj-uttar-pradesh-other-59957",
-  "https://www.shiksha.com/college/datta-meghe-ayurved-college-hospital-and-research-centre-maharashtra-other-68231",
-  "https://www.shiksha.com/college/burdwan-homoeopathic-medical-college-and-hospital-bardhaman-87071",
-  "https://www.shiksha.com/college/george-college-george-group-of-colleges-b-b-ganguly-street-kolkata-55571",
-  "https://www.shiksha.com/college/lucknow-institute-of-pharmacy-59999",
-  "https://www.shiksha.com/college/belur-sramajibi-swasthya-prakalpa-samity-howrah-205135",
-  "https://www.shiksha.com/college/sri-sai-group-of-institutes-badhani-pathankot-37062",
-  "https://www.shiksha.com/college/babe-ke-ayurvedic-medical-college-and-hospital-moga-87141",
-  "https://www.shiksha.com/university/sardar-patel-university-balaghat-66075",
-  "https://www.shiksha.com/college/surabhi-institute-of-medical-sciences-telangana-other-70011",
-  "https://www.shiksha.com/college/pimpri-chinchwad-municipal-corporation-post-graduate-institute-pimpri-pune-102523",
-  "https://www.shiksha.com/college/college-of-veterinary-science-and-animal-husbandry-agartala-187185",
-  "https://www.shiksha.com/college/dm-wayanad-institute-of-medical-sciences-66063",
-  "https://www.shiksha.com/college/government-polytechnic-college-meham-rohtak-98411",
-  "https://www.shiksha.com/college/chinmaya-prajna-pratishthanam-chinmaya-vishwa-vidyapeeth-kochi-238336",
-  "https://www.shiksha.com/college/venkateshwara-group-of-institutions-meerut-56037",
+  "https://www.shiksha.com/college/college-of-medical-laboratory-technology-ernakulum-194765",
+  "https://www.shiksha.com/college/l-r-group-of-institutes-solan-64033",
+  "https://www.shiksha.com/college/swami-keshvanand-institute-of-pharmacy-bikaner-89329",
+  "https://www.shiksha.com/college/uma-nath-singh-autonomous-state-medical-college-society-jaunpur-180745",
+  "https://www.shiksha.com/university/bhaikaka-university-anand-182385",
+  "https://www.shiksha.com/college/ktg-college-of-physiotherapy-bangalore-185895",
+  "https://www.shiksha.com/college/abha-gaikwad-patil-college-of-pharmacy-mohagaon-nagpur-213403",
+  "https://www.shiksha.com/college/college-of-veterinary-science-and-animal-husbandry-navsari-224577",
+  "https://www.shiksha.com/college/college-of-veterinary-sciences-and-animal-husbandry-central-agricultural-university-mizoram-aizawl-54071",
+  "https://www.shiksha.com/college/icri-akash-hospital-new-delhi-dwarka-212267",
+  "https://www.shiksha.com/university/pt-sundarlal-sharma-open-university-bilaspur-61241",
+  "https://www.shiksha.com/college/government-polytechnic-college-jalgaon-98467",
+  "https://www.shiksha.com/college/smt-malini-kishore-sanghvi-homoeopathic-medical-college-vadodara-87521",
+  "https://www.shiksha.com/college/malabar-dental-college-and-research-centre-malappuram-66087",
+  "https://www.shiksha.com/college/kannur-medical-college-70013",
+  "https://www.shiksha.com/college/shivlingeshwar-college-of-pharmacy-latur-88687",
+  "https://www.shiksha.com/college/sai-ayurved-college-hospital-and-research-centre-solapur-68171",
+  "https://www.shiksha.com/college/sir-c-v-raman-dseu-dheerpur-campus-delhi-other-203767",
+  "https://www.shiksha.com/college/pailan-college-of-management-and-technology-pcmt-joka-kolkata-24327",
+  "https://www.shiksha.com/college/oxbridge-group-of-institutions-vishwaneedam-bangalore-67785",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1241
+    c_count = 1521
 
     try:
         for base_url in BASE_URL:
