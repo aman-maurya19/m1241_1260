@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/lotus-institute-of-pharmacy-bareilly-65645",
-  "https://www.shiksha.com/college/dayanand-institute-of-pharmacy-latur-88599",
-  "https://www.shiksha.com/college/government-medical-college-vizianagaram-213213",
-  "https://www.shiksha.com/college/mother-teresa-college-of-pharmacy-ghatkesar-hyderabad-87839",
-  "https://www.shiksha.com/college/smt-b-n-b-swaminarayan-pharmacy-college-valsad-101709",
-  "https://www.shiksha.com/college/mittal-institute-of-pharmacy-bhopal-125845",
-  "https://www.shiksha.com/college/g-madegowda-institute-of-naturopathy-and-yogic-sciences-mandya-150101",
-  "https://www.shiksha.com/college/cis-foundation-saket-delhi-213685",
-  "https://www.shiksha.com/college/p-g-institute-of-medical-sciences-midnapore-61827",
-  "https://www.shiksha.com/college/dr-karigowda-college-of-pharmacy-hassan-67743",
-  "https://www.shiksha.com/college/lala-birkha-ram-college-of-pharmacy-panchkula-68361",
-  "https://www.shiksha.com/college/s-j-n-homoeopathic-medical-college-hospital-guwahati-213899",
-  "https://www.shiksha.com/university/islamic-university-of-science-and-technology-jammu-kashmir-other-40939",
-  "https://www.shiksha.com/college/institute-of-science-and-technology-midnapore-41548",
-  "https://www.shiksha.com/college/ct-polytechnic-college-jalandhar-52039",
-  "https://www.shiksha.com/college/teegala-krishna-reddy-college-of-pharmacy-rangareddy-hyderabad-70255",
-  "https://www.shiksha.com/college/east-west-model-education-institute-west-bengal-other-144573",
-  "https://www.shiksha.com/college/karavali-college-of-pharmacy-mangalore-185887",
-  "https://www.shiksha.com/college/government-polytechnic-umri-kurukshetra-156197",
-  "https://www.shiksha.com/college/ankerite-ayurvedic-medical-college-and-hospital-lucknow-184427",
+  "https://www.shiksha.com/college/nalanda-institute-of-pharmaceutical-sciences-guntur-61089",
+  "https://www.shiksha.com/college/fabtech-college-of-pharmacy-sangola-solapur-202161",
+  "https://www.shiksha.com/college/aster-health-academy-bangalore-225255",
+  "https://www.shiksha.com/college/school-of-life-sciences-ooty-off-campus-228597",
+  "https://www.shiksha.com/college/emversity-school-of-hospitality-delhi-rohini-delhi-other-236926",
+  "https://www.shiksha.com/college/maharishi-arvind-college-of-pharmacy-jaipur-53306",
+  "https://www.shiksha.com/college/gautam-institute-of-nursing-and-paramedics-nalanda-146469",
+  "https://www.shiksha.com/college/vlcc-institute-of-beauty-and-nutrition-kolkata-sarat-bose-road-29424",
+  "https://www.shiksha.com/college/faculty-of-science-kurukshetra-university-53318",
+  "https://www.shiksha.com/college/theni-medical-college-and-hospital-tamil-nadu-other-63171",
+  "https://www.shiksha.com/college/buddha-college-of-pharmacy-bit-gorakhpur-65395",
+  "https://www.shiksha.com/college/maharashtra-college-of-pharmacy-latur-88689",
+  "https://www.shiksha.com/college/institute-of-pharmacy-malegaon-nashik-100587",
+  "https://www.shiksha.com/university/aisect-university-hazaribagh-56199",
+  "https://www.shiksha.com/college/lpm-college-of-pharmac-deoria-uttar-pradesh-other-65427",
+  "https://www.shiksha.com/college/periyar-college-of-pharmaceutical-sciences-for-girls-tiruchirappalli-88289",
+  "https://www.shiksha.com/college/dattakala-institute-pune-88561",
+  "https://www.shiksha.com/college/ndmvps-s-college-of-physiotherapy-nashik-189505",
+  "https://www.shiksha.com/college/alvas-college-of-physiotherapy-moodubidire-karnataka-other-210885",
+  "https://www.shiksha.com/college/rajgad-dnyanpeeth-s-shri-chhatrapati-shivajiraje-college-of-engineering-dhankawadi-pune-59713",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1741
+    c_count = 1941
 
     try:
         for base_url in BASE_URL:
