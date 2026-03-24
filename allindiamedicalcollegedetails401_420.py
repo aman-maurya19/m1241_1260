@@ -15,26 +15,29 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/nalanda-institute-of-pharmaceutical-sciences-guntur-61089",
-  "https://www.shiksha.com/college/fabtech-college-of-pharmacy-sangola-solapur-202161",
-  "https://www.shiksha.com/college/aster-health-academy-bangalore-225255",
-  "https://www.shiksha.com/college/school-of-life-sciences-ooty-off-campus-228597",
-  "https://www.shiksha.com/college/emversity-school-of-hospitality-delhi-rohini-delhi-other-236926",
-  "https://www.shiksha.com/college/maharishi-arvind-college-of-pharmacy-jaipur-53306",
-  "https://www.shiksha.com/college/gautam-institute-of-nursing-and-paramedics-nalanda-146469",
-  "https://www.shiksha.com/college/vlcc-institute-of-beauty-and-nutrition-kolkata-sarat-bose-road-29424",
-  "https://www.shiksha.com/college/faculty-of-science-kurukshetra-university-53318",
-  "https://www.shiksha.com/college/theni-medical-college-and-hospital-tamil-nadu-other-63171",
-  "https://www.shiksha.com/college/buddha-college-of-pharmacy-bit-gorakhpur-65395",
-  "https://www.shiksha.com/college/maharashtra-college-of-pharmacy-latur-88689",
-  "https://www.shiksha.com/college/institute-of-pharmacy-malegaon-nashik-100587",
-  "https://www.shiksha.com/university/aisect-university-hazaribagh-56199",
-  "https://www.shiksha.com/college/lpm-college-of-pharmac-deoria-uttar-pradesh-other-65427",
-  "https://www.shiksha.com/college/periyar-college-of-pharmaceutical-sciences-for-girls-tiruchirappalli-88289",
-  "https://www.shiksha.com/college/dattakala-institute-pune-88561",
-  "https://www.shiksha.com/college/ndmvps-s-college-of-physiotherapy-nashik-189505",
-  "https://www.shiksha.com/college/alvas-college-of-physiotherapy-moodubidire-karnataka-other-210885",
-  "https://www.shiksha.com/college/rajgad-dnyanpeeth-s-shri-chhatrapati-shivajiraje-college-of-engineering-dhankawadi-pune-59713",
+  "https://www.shiksha.com/college/gajanan-maharaj-college-of-pharmacy-aurangabad-88563",
+  "https://www.shiksha.com/university/guru-ravidas-ayurved-university-hoshiarpur-88755",
+  "https://www.shiksha.com/college/school-of-pharmacy-vadodara-202381",
+  "https://www.shiksha.com/college/sushila-institute-of-medical-science-dehradun-208823",
+  "https://www.shiksha.com/college/shri-bhanwar-lal-dugar-ayurved-vishwa-bharti-ayurved-college-rajasthan-other-214155",
+  "https://www.shiksha.com/college/icri-moolchand-hospital-delhi-225417",
+  "https://www.shiksha.com/college/government-medical-college-and-associated-hospital-rajouri-67539",
+  "https://www.shiksha.com/college/sri-ram-nallamani-yadava-college-of-pharmacy-tirunelveli-88287",
+  "https://www.shiksha.com/college/radha-devi-ramchandra-mangal-institute-neemuch-121689",
+  "https://www.shiksha.com/college/sri-padmavathi-women-s-polytechnic-chittoor-146353",
+  "https://www.shiksha.com/college/autonomous-state-society-medical-college-mirzapur-180739",
+  "https://www.shiksha.com/college/lalit-hari-state-ayurvedic-college-pilibhit-213901",
+  "https://www.shiksha.com/college/pioneer-ayurvedic-college-and-hospital-vadodara-214805",
+  "https://www.shiksha.com/college/shridhar-atulkumar-jani-ayurvedic-college-amreli-214817",
+  "https://www.shiksha.com/college/markaz-unani-medical-college-kozhikode-66095",
+  "https://www.shiksha.com/college/new-science-degree-college-hyderabad-194265",
+  "https://www.shiksha.com/university/karnataka-state-akkamahadevi-women-s-university-bijapur-58779",
+  "https://www.shiksha.com/college/sanjo-college-of-pharmaceutical-studies-palakkad-60823",
+  "https://www.shiksha.com/college/vignan-institute-of-pharmaceutical-sciences-ramoji-film-city-hyderabad-87743",
+  "https://www.shiksha.com/college/r-d-memorial-college-of-pharmacy-and-research-indore-147241",
+  "https://www.shiksha.com/college/bharat-group-of-institutions-sonepat-32347",
+  "https://www.shiksha.com/college/school-of-pharmaceutical-science-mvn-university-palwal-53389",
+  "https://www.shiksha.com/college/institute-of-mental-health-and-hospital-agra-67555",
 ]
 
 
@@ -9243,7 +9246,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1941
+    c_count = 2221
 
     try:
         for base_url in BASE_URL:
