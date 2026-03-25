@@ -15,29 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/gajanan-maharaj-college-of-pharmacy-aurangabad-88563",
-  "https://www.shiksha.com/university/guru-ravidas-ayurved-university-hoshiarpur-88755",
-  "https://www.shiksha.com/college/school-of-pharmacy-vadodara-202381",
-  "https://www.shiksha.com/college/sushila-institute-of-medical-science-dehradun-208823",
-  "https://www.shiksha.com/college/shri-bhanwar-lal-dugar-ayurved-vishwa-bharti-ayurved-college-rajasthan-other-214155",
-  "https://www.shiksha.com/college/icri-moolchand-hospital-delhi-225417",
-  "https://www.shiksha.com/college/government-medical-college-and-associated-hospital-rajouri-67539",
-  "https://www.shiksha.com/college/sri-ram-nallamani-yadava-college-of-pharmacy-tirunelveli-88287",
-  "https://www.shiksha.com/college/radha-devi-ramchandra-mangal-institute-neemuch-121689",
-  "https://www.shiksha.com/college/sri-padmavathi-women-s-polytechnic-chittoor-146353",
-  "https://www.shiksha.com/college/autonomous-state-society-medical-college-mirzapur-180739",
-  "https://www.shiksha.com/college/lalit-hari-state-ayurvedic-college-pilibhit-213901",
-  "https://www.shiksha.com/college/pioneer-ayurvedic-college-and-hospital-vadodara-214805",
-  "https://www.shiksha.com/college/shridhar-atulkumar-jani-ayurvedic-college-amreli-214817",
-  "https://www.shiksha.com/college/markaz-unani-medical-college-kozhikode-66095",
-  "https://www.shiksha.com/college/new-science-degree-college-hyderabad-194265",
-  "https://www.shiksha.com/university/karnataka-state-akkamahadevi-women-s-university-bijapur-58779",
-  "https://www.shiksha.com/college/sanjo-college-of-pharmaceutical-studies-palakkad-60823",
-  "https://www.shiksha.com/college/vignan-institute-of-pharmaceutical-sciences-ramoji-film-city-hyderabad-87743",
-  "https://www.shiksha.com/college/r-d-memorial-college-of-pharmacy-and-research-indore-147241",
-  "https://www.shiksha.com/college/bharat-group-of-institutions-sonepat-32347",
-  "https://www.shiksha.com/college/school-of-pharmaceutical-science-mvn-university-palwal-53389",
-  "https://www.shiksha.com/college/institute-of-mental-health-and-hospital-agra-67555",
+  "https://www.shiksha.com/college/sri-sai-ayurvedic-college-and-hospital-aligarh-201891",
+  "https://www.shiksha.com/college/nethaji-college-of-physiotherapy-karnataka-other-201953",
+  "https://www.shiksha.com/college/karunadu-college-of-paramedical-sciences-bangalore-202047",
+  "https://www.shiksha.com/college/institute-of-paramedical-science-and-research-uttar-pradesh-other-181233",
+  "https://www.shiksha.com/college/school-of-nursing-mundakayam-idukki-201119",
+  "https://www.shiksha.com/college/shri-shankaracharya-institute-of-pharmaceutical-sciences-and-research-bhilai-202057",
+  "https://www.shiksha.com/college/isas-international-beauty-school-bangalore-jayanagar-204263",
+  "https://www.shiksha.com/college/sardar-patel-college-of-pharmacy-jamshedpur-207639",
+  "https://www.shiksha.com/college/dr-bhagat-singh-rai-college-of-pharmacy-madhya-pradesh-other-213255",
+  "https://www.shiksha.com/college/psp-medical-college-and-research-institute-kanchipuram-214871",
+  "https://www.shiksha.com/college/tripura-santiniketan-medical-college-hospital-tripura-other-231714",
+  "https://www.shiksha.com/college/ns-college-of-pharmacy-west-bengal-other-237320",
+  "https://www.shiksha.com/college/satpuda-college-of-pharmacy-maharashtra-other-237446",
+  "https://www.shiksha.com/university/rungta-international-skills-university-bhilai-242292",
+  "https://www.shiksha.com/college/r-p-s-college-of-pharmacy-barabanki-65739",
+  "https://www.shiksha.com/college/sh-l-n-hindu-college-rohtak-69345",
+  "https://www.shiksha.com/college/godavari-foundation-s-dr-ulhas-patil-homoeopathy-medical-college-and-hospital-jalgaon-70091",
+  "https://www.shiksha.com/college/cuttack-homeopathic-medical-college-87247",
+  "https://www.shiksha.com/college/pratibondhi-kalyan-kendra-college-of-education-hooghly-205177",
+  "https://www.shiksha.com/college/kmmc-medical-college-hospitals-tamil-nadu-other-234420",
 ]
 
 
@@ -9246,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2221
+    c_count = 2941
 
     try:
         for base_url in BASE_URL:
