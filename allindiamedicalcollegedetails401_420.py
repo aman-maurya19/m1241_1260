@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/sri-sai-ayurvedic-college-and-hospital-aligarh-201891",
-  "https://www.shiksha.com/college/nethaji-college-of-physiotherapy-karnataka-other-201953",
-  "https://www.shiksha.com/college/karunadu-college-of-paramedical-sciences-bangalore-202047",
-  "https://www.shiksha.com/college/institute-of-paramedical-science-and-research-uttar-pradesh-other-181233",
-  "https://www.shiksha.com/college/school-of-nursing-mundakayam-idukki-201119",
-  "https://www.shiksha.com/college/shri-shankaracharya-institute-of-pharmaceutical-sciences-and-research-bhilai-202057",
-  "https://www.shiksha.com/college/isas-international-beauty-school-bangalore-jayanagar-204263",
-  "https://www.shiksha.com/college/sardar-patel-college-of-pharmacy-jamshedpur-207639",
-  "https://www.shiksha.com/college/dr-bhagat-singh-rai-college-of-pharmacy-madhya-pradesh-other-213255",
-  "https://www.shiksha.com/college/psp-medical-college-and-research-institute-kanchipuram-214871",
-  "https://www.shiksha.com/college/tripura-santiniketan-medical-college-hospital-tripura-other-231714",
-  "https://www.shiksha.com/college/ns-college-of-pharmacy-west-bengal-other-237320",
-  "https://www.shiksha.com/college/satpuda-college-of-pharmacy-maharashtra-other-237446",
-  "https://www.shiksha.com/university/rungta-international-skills-university-bhilai-242292",
-  "https://www.shiksha.com/college/r-p-s-college-of-pharmacy-barabanki-65739",
-  "https://www.shiksha.com/college/sh-l-n-hindu-college-rohtak-69345",
-  "https://www.shiksha.com/college/godavari-foundation-s-dr-ulhas-patil-homoeopathy-medical-college-and-hospital-jalgaon-70091",
-  "https://www.shiksha.com/college/cuttack-homeopathic-medical-college-87247",
-  "https://www.shiksha.com/college/pratibondhi-kalyan-kendra-college-of-education-hooghly-205177",
-  "https://www.shiksha.com/college/kmmc-medical-college-hospitals-tamil-nadu-other-234420",
+ "https://www.shiksha.com/college/ark-college-of-pharmacy-kaushambi-uttar-pradesh-other-65743",
+  "https://www.shiksha.com/college/mascot-college-of-pharmacy-uttar-pradesh-other-65751",
+  "https://www.shiksha.com/college/mother-teresa-pharmacy-college-khammam-87719",
+  "https://www.shiksha.com/college/vishal-group-of-institutions-pune-88205",
+  "https://www.shiksha.com/college/mak-college-of-pharmacy-ranga-reddy-88247",
+  "https://www.shiksha.com/college/pataldhamal-wadhwani-college-of-pharmacy-yavatmal-89073",
+  "https://www.shiksha.com/college/shri-rawatpura-sarkar-college-sagar-147171",
+  "https://www.shiksha.com/college/shri-balaji-college-of-pharmacy-alwar-148155",
+  "https://www.shiksha.com/college/yashraj-college-of-professional-studies-uttar-pradesh-other-149311",
+  "https://www.shiksha.com/college/jr-kissan-college-of-pharmacy-and-health-science-rohtak-self-financed-179875",
+  "https://www.shiksha.com/college/shri-badrinath-college-of-pharmacy-jhansi-181863",
+  "https://www.shiksha.com/college/m-i-e-m-r-medical-college-and-research-latur-189567",
+  "https://www.shiksha.com/college/eklavya-college-of-nursing-panchmahal-197787",
+  "https://www.shiksha.com/college/saharanpur-pharmacy-college-60083",
+  "https://www.shiksha.com/college/d-c-r-m-college-of-pharmacy-andhra-pradesh-other-60710",
+  "https://www.shiksha.com/college/b-r-college-of-pharmacy-hardoi-65499",
+  "https://www.shiksha.com/university/rajmata-vijayaraje-scindia-krishi-vishwavidyalaya-gwalior-65557",
+  "https://www.shiksha.com/college/saharanpur-pharmacy-college-saharanpur-uttar-pradesh-other-65661",
+  "https://www.shiksha.com/university/central-institute-of-higher-tibetan-studies-varanasi-65671",
+  "https://www.shiksha.com/college/s-l-bawa-d-a-v-college-batala-76369",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2941
+    c_count = 3201
 
     try:
         for base_url in BASE_URL:
